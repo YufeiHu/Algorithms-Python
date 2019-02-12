@@ -66,7 +66,7 @@ class binary_search_tree(object):
         else:
             return self._find(node.right, val)
 
-    def print(self):
+    def print_tree(self):
         ans = list()
         self._print(self.root, ans)
         print(", ".join(ans))
@@ -87,9 +87,9 @@ if __name__ == "__main__":
     binary_search_tree_inst.insert(2)
     binary_search_tree_inst.insert(2)
     binary_search_tree_inst.insert(0)
-    binary_search_tree_inst.print()
+    binary_search_tree_inst.print_tree()
 
     binary_search_tree_inst.delete(2)
     binary_search_tree_inst.delete(5)
     binary_search_tree_inst.delete(6)
-    binary_search_tree_inst.print()
+    binary_search_tree_inst.print_tree()
