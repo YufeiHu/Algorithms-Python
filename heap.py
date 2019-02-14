@@ -1,3 +1,11 @@
+"""
+The structure of the heap looks like:
+                   0
+            0             1
+                      2       3
+                   4     5 6     7
+"""
+
 class heap(object):
 
     def __init__(self):
