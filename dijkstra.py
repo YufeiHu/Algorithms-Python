@@ -23,10 +23,8 @@ def dijkstra(edges, start, end):
             if v1 == end:
                 return dist_total, path[4:]
             for dist_curr, v2 in graph[v1]:
-                dist_prev = distances.get(v2, None)
                 dist_next = dist_total + dist_curr
-                if not dist_prev or dist_next < dist_prev:
-                    heappush(queue, (dist_next, v2, path))
+                heappush(queue, (dist_next, v2, path))
 
     return float("inf"), ""
 
