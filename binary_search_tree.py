@@ -1,5 +1,4 @@
 class tree_node(object):
-
     def __init__(self, val):
         self.val = val
         self.left = None
@@ -7,7 +6,6 @@ class tree_node(object):
 
 
 class binary_search_tree(object):
-
     def __init__(self):
         self.root = None
 
