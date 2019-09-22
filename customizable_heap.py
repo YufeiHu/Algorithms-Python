@@ -8,7 +8,6 @@ class point:
 
 
 class customizable_heap(object):
-
     def __init__(self, data=None, comparator=lambda x: x):
         self.comparator = comparator
         self.cnt = 0
