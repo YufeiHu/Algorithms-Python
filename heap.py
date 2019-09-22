@@ -7,7 +7,6 @@ The structure of the heap looks like:
 """
 
 class heap(object):
-
     def __init__(self):
         self.heap = list()
 
