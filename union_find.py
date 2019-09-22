@@ -2,7 +2,6 @@ from collections import defaultdict
 
 
 class union_find(object):
-
     def __init__(self, num_elements):
         self.parents = list(range(num_elements))
         self.size_component = [1] * num_elements
