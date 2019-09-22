@@ -2,14 +2,12 @@ from collections import defaultdict
 
 
 class trie_node(object):
-
     def __init__(self):
         self.children = defaultdict(trie_node)
         self.is_word = False
 
 
 class trie(object):
-
     def __init__(self):
         self.root = trie_node()
 
