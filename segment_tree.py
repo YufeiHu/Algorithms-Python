@@ -1,5 +1,4 @@
 class segment_tree(object):
-
     def __init__(self, N):
         self.N = N
         self.low = [0] * (4 * N + 1)
