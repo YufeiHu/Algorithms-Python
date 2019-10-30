@@ -1,4 +1,4 @@
-class segment_tree(object):
+class segment_tree_min(object):
     def __init__(self, N):
         self.N = N
         self.low = [0] * (4 * N + 1)
@@ -55,17 +55,17 @@ class segment_tree(object):
 
 
 if __name__ == "__main__":
-    segment_tree_inst = segment_tree(10)
-    segment_tree_inst.increment(0, 3, 2)
-    segment_tree_inst.increment(0, 7, 1)
-    segment_tree_inst.increment(4, 7, 10)
-    segment_tree_inst.increment(2, 5, 7)
-    print(segment_tree_inst.minimum(0, 7))
-    print(segment_tree_inst.minimum(1, 4))
-    print(segment_tree_inst.minimum(2, 5))
-    print(segment_tree_inst.minimum(0, 0))
-    print(segment_tree_inst.minimum(1, 1))
-    print(segment_tree_inst.minimum(2, 2))
-    print(segment_tree_inst.minimum(3, 3))
-    print(segment_tree_inst.minimum(4, 4))
-    print(segment_tree_inst.minimum(5, 5))
+    segment_tree_min_inst = segment_tree_min(10)
+    segment_tree_min_inst.increment(0, 3, 2)
+    segment_tree_min_inst.increment(0, 7, 1)
+    segment_tree_min_inst.increment(4, 7, 10)
+    segment_tree_min_inst.increment(2, 5, 7)
+    print(segment_tree_min_inst.minimum(0, 7))
+    print(segment_tree_min_inst.minimum(1, 4))
+    print(segment_tree_min_inst.minimum(2, 5))
+    print(segment_tree_min_inst.minimum(0, 0))
+    print(segment_tree_min_inst.minimum(1, 1))
+    print(segment_tree_min_inst.minimum(2, 2))
+    print(segment_tree_min_inst.minimum(3, 3))
+    print(segment_tree_min_inst.minimum(4, 4))
+    print(segment_tree_min_inst.minimum(5, 5))
