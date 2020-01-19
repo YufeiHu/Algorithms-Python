@@ -4,7 +4,7 @@ from collections import defaultdict
 class union_find(object):
     def __init__(self, num_elements):
         self.parents = list(range(num_elements))
-        self.size_component = [1] * num_elements
+        self.size_component = [1] * num_elements  # notice this element has a bug, it is only guaranteed correct for those 'parent' nodes
         self.num_elements = num_elements
         self.num_components = num_elements
 
