@@ -2,14 +2,14 @@ def knapsack(weights, values, capacity):
     n = len(weights)
     memo = [[0] * (capacity + 1) for _ in range(n + 1)]
 
-    for i in range(1, n + 1):
-        for j in range(1, capacity + 1):
-            if weights[i - 1] > j:
-                memo[i][j] = memo[i - 1][j]
+    for y in range(1, n + 1):
+        for x in range(1, capacity + 1):
+            if weights[y - 1] > x:
+                memo[y][x] = memo[y - 1][x]
             else:
-                memo[i][j] = max(memo[i - 1][j], values[i - 1] + memo[i - 1][j - weights[i - 1]])
+                memo[y][x] = max(memo[y - 1][x], values[y - 1] + memo[y - 1][x - weights[y - 1]])
 
-    return memo[n][capacity]
+    return memo[-1][-1]
 
 
 if __name__ == "__main__":
